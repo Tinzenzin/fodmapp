@@ -7,7 +7,7 @@
       "avocado"
     ],
     "level": "high",
-    "description": "Avokado sisältää paljon polyoleja (sorbitolia), jotka nostavat sen FODMAP-tasoa. Pieniä määriä (1/8 avokadoa) voidaan joillain sietää."
+    "description": "Avokado sisältää paljon polyoleja (sorbitolia), jotka nostavat sen FODMAP-tasoa. Pieniä määriä (1/8 avokadoa) voidaan sietää."
   },
   {
     "canonical": "banaani",
@@ -17,7 +17,7 @@
       "banana"
     ],
     "level": "low",
-    "description": "Kypsä banaani on vähä-FODMAP, mutta ylikypsässä nousee fruktaanin määrä. Vältä pilkullista banaania, jos olet herkkä."
+    "description": "Kypsä banaani on vähä-FODMAP, mutta ylikypsässä nousee fruktaanin määrä. Vältä pilkullisia tai ruskeita banaaneita, jos olet herkkä."
   },
   {
     "canonical": "omena",
@@ -26,7 +26,7 @@
       "apple"
     ],
     "level": "high",
-    "description": "Omenat sisältävät runsaasti fruktoosia ja polyoleja. Suositellaan vältettäväksi herkillä henkilöillä."
+    "description": "Omenat sisältävät runsaasti fruktoosia ja polyoleja. Suositellaan vältettäväksi FODMAP-herkillä henkilöillä."
   },
   {
     "canonical": "porkkana",
@@ -66,7 +66,7 @@
       "garlic"
     ],
     "level": "high",
-    "description": "Valkosipuli sisältää paljon fruktaaneja ja on korkea-FODMAP. Infusoitu öljy voi olla sopiva vaihtoehto."
+    "description": "Valkosipuli sisältää paljon fruktaaneja ja on korkea-FODMAP ruoka-aine. Infusoitu öljy voi olla sopiva vaihtoehto."
   },
   {
     "canonical": "maito",
@@ -145,7 +145,7 @@
       "oats"
     ],
     "level": "low",
-    "description": "Kaura on hyvin siedetty vilja vähä-FODMAP-annoksina. Vältä lisättyä hunajaa tai kuivattuja hedelmiä."
+    "description": "Kaura on hyvin siedetty vilja. Vältä lisättyä hunajaa tai kuivattuja hedelmiä."
   },
   {
     "canonical": "riisi",
@@ -174,7 +174,7 @@
       "chicken"
     ],
     "level": "low",
-    "description": "Kana on vähä-FODMAP, kun sitä ei ole valmistettu marinadissa tai valkosipulilla."
+    "description": "Kana on vähä-FODMAP, kunhan sitä ei ole valmistettu marinadissa tai valkosipulilla."
   },
   {
     "canonical": "jogurtti",
