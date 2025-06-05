@@ -1,18 +1,18 @@
 let foodData = [];
 
-// Ladataan ruoka-aineiden data JSON-tiedostosta
+// Load food data
 fetch('fooddata.json')
   .then(response => response.json())
   .then(data => {
     foodData = data;
   });
 
-// Poistaa ylimääräiset välilyönnit ja muuntaa pieniksi kirjaimiksi
+// Normalize input
 function normalize(text) {
   return text.trim().toLowerCase();
 }
 
-// Haku ja tuloksen esitys
+// Perform search
 function searchFood() {
   const query = normalize(document.getElementById('search').value);
   const resultDiv = document.getElementById('result');
@@ -23,13 +23,14 @@ function searchFood() {
 
   if (match) {
     const colorClass = match.level.toLowerCase();
-    resultDiv.innerHTML = `"${match.canonical}" on <span class="${colorClass}">${match.level.toUpperCase()}</span> FODMAP`;
+    const levelText = match.level.toUpperCase();
+    resultDiv.innerHTML = `"${match.canonical}" on <span class="${colorClass}">${levelText}</span> FODMAP`;
   } else {
     resultDiv.innerHTML = `Ainetta "${query}" ei löytynyt tietokannasta.`;
   }
 }
 
-// Mahdollistaa haun myös Enter-näppäimellä
+// Enable Enter key
 document.getElementById('search').addEventListener('keyup', function (event) {
   if (event.key === 'Enter') {
     searchFood();
