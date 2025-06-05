@@ -80,6 +80,29 @@ button:hover {
   border-top: 1px solid #e0f0e0;
 }
 
+/* Footer styles */
+.footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+  background-color: #f8fdf8;
+  border-top: 1px solid #e0f0e0;
+  padding: 1em;
+  margin-top: 4em;
+}
+
+/* Ensure the page stretches full height */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1; /* Push footer to the bottom */
+}
+
+/* Footer link styling */
 .footer a {
   color: #4a9c4a;
   text-decoration: none;
@@ -89,7 +112,3 @@ button:hover {
   text-decoration: underline;
 }
 
-}
-.high {
-  color: #f44336;
-}
