@@ -1,0 +1,109 @@
+[
+  {
+    "canonical": "avokado",
+    "aliases": [
+      "avokado",
+      "avokaado",
+      "avocado"
+    ],
+    "level": "high"
+  },
+  {
+    "canonical": "banaani",
+    "aliases": [
+      "banaani",
+      "banani",
+      "banana"
+    ],
+    "level": "low"
+  },
+  {
+    "canonical": "omena",
+    "aliases": [
+      "omena",
+      "apple"
+    ],
+    "level": "high"
+  },
+  {
+    "canonical": "porkkana",
+    "aliases": [
+      "porkkana",
+      "porkana",
+      "carrot"
+    ],
+    "level": "low"
+  },
+  {
+    "canonical": "sipuli",
+    "aliases": [
+      "sipuli",
+      "sipul",
+      "onion"
+    ],
+    "level": "high"
+  },
+  {
+    "canonical": "kurkku",
+    "aliases": [
+      "kurkku",
+      "kurku",
+      "cucumber"
+    ],
+    "level": "low"
+  },
+  {
+    "canonical": "valkosipuli",
+    "aliases": [
+      "valkosipuli",
+      "valkosip",
+      "garlic"
+    ],
+    "level": "high"
+  },
+  {
+    "canonical": "maito",
+    "aliases": [
+      "maito",
+      "milk"
+    ],
+    "level": "high"
+  },
+  {
+    "canonical": "laktoositon maito",
+    "aliases": [
+      "laktoositon maito",
+      "laktoositon",
+      "laktoosivapaa maito",
+      "lactose-free milk"
+    ],
+    "level": "low"
+  },
+  {
+    "canonical": "peruna",
+    "aliases": [
+      "peruna",
+      "potato"
+    ],
+    "level": "low"
+  },
+  {
+    "canonical": "herne",
+    "aliases": [
+      "herne",
+      "herneet",
+      "pea",
+      "peas"
+    ],
+    "level": "high"
+  },
+  {
+    "canonical": "parsakaali",
+    "aliases": [
+      "parsakaali",
+      "broccoli",
+      "brokkoli"
+    ],
+    "level": "medium"
+  }
+]
