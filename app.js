@@ -17,7 +17,7 @@ function searchFood() {
   const resultDiv = document.getElementById('result');
   if (match) {
     let colorClass = match.level.toLowerCase();
-    resultDiv.innerHTML = `"${match.canonical}" on <span class="\${colorClass}">\${match.level.toUpperCase()} FODMAP</span>`;
+    resultDiv.innerHTML = `"${match.canonical}" on <span class="${colorClass}">${match.level.toUpperCase()}</span> FODMAP`;
   } else {
     resultDiv.innerHTML = "Ainetta ei löytynyt tietokannasta.";
   }
