@@ -2,23 +2,25 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FodMapp – Ilmainen FODMAP-sovellus</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>FodMapp</h1>
-    <p>Kirjoita ruoka-aine ja tarkista sen FODMAP-luokitus</p>
-    <input type="text" id="search" placeholder="Esim. avokado, maito, porkkana..." />
-    <button onclick="searchFood()">Hae</button>
-    <div id="result"></div>
-  </div>
+  <main class="main">
+    <div class="container">
+      <h1>FodMapp</h1>
+      <p>Kirjoita ruoka-aine ja tarkista sen FODMAP-luokitus</p>
+      <input type="text" id="search" placeholder="Esim. avokado, maito, porkkana..." />
+      <button onclick="searchFood()">Hae</button>
+      <div id="result"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Created by <a href="https://yrttitohtori.fi" target="_blank" rel="noopener noreferrer">Yrttitohtori</a></p>
+  </footer>
+
   <script src="app.js"></script>
- <footer class="footer">
-  <p>Created by <a href="https://yrttitohtori.fi" target="_blank" rel="noopener noreferrer">Yrttitohtori</a></p>
-</footer>
-
-
 </body>
 </html>
