@@ -69,6 +69,26 @@ button:hover {
 }
 .medium {
   color: #ff9800;
+
+  .footer {
+  margin-top: 4em;
+  padding: 1em 0;
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+  background-color: #f8fdf8; /* erittäin vaalea vihreä tausta */
+  border-top: 1px solid #e0f0e0;
+}
+
+.footer a {
+  color: #4a9c4a;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
 }
 .high {
   color: #f44336;
