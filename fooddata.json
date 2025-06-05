@@ -6,7 +6,8 @@
       "avokaado",
       "avocado"
     ],
-    "level": "high"
+    "level": "high",
+    "description": "Avokado sisältää paljon polyoleja (sorbitolia), jotka nostavat sen FODMAP-tasoa. Pieniä määriä (1/8 avokadoa) voidaan joillain sietää."
   },
   {
     "canonical": "banaani",
@@ -15,7 +16,8 @@
       "banani",
       "banana"
     ],
-    "level": "low"
+    "level": "low",
+    "description": "Kypsä banaani on vähä-FODMAP, mutta ylikypsässä nousee fruktaanin määrä. Vältä pilkullista banaania, jos olet herkkä."
   },
   {
     "canonical": "omena",
@@ -23,7 +25,8 @@
       "omena",
       "apple"
     ],
-    "level": "high"
+    "level": "high",
+    "description": "Omenat sisältävät runsaasti fruktoosia ja polyoleja. Suositellaan vältettäväksi herkillä henkilöillä."
   },
   {
     "canonical": "porkkana",
@@ -32,7 +35,8 @@
       "porkana",
       "carrot"
     ],
-    "level": "low"
+    "level": "low",
+    "description": "Porkkana on turvallinen ja hyvin siedetty vähä-FODMAP-vihannes. Sopii lähes kaikille."
   },
   {
     "canonical": "sipuli",
@@ -41,7 +45,8 @@
       "sipul",
       "onion"
     ],
-    "level": "high"
+    "level": "high",
+    "description": "Sipuli sisältää runsaasti fruktaaneja. Suositellaan vältettäväksi, erityisesti raakana."
   },
   {
     "canonical": "kurkku",
@@ -50,7 +55,8 @@
       "kurku",
       "cucumber"
     ],
-    "level": "low"
+    "level": "low",
+    "description": "Kurkku on vähä-FODMAP ja erittäin hyvin siedetty. Voidaan käyttää raakana tai kypsennettynä."
   },
   {
     "canonical": "valkosipuli",
@@ -59,7 +65,8 @@
       "valkosip",
       "garlic"
     ],
-    "level": "high"
+    "level": "high",
+    "description": "Valkosipuli sisältää paljon fruktaaneja ja on korkea-FODMAP. Infusoitu öljy voi olla sopiva vaihtoehto."
   },
   {
     "canonical": "maito",
@@ -67,7 +74,8 @@
       "maito",
       "milk"
     ],
-    "level": "high"
+    "level": "high",
+    "description": "Tavallinen maito sisältää laktoosia, joka on korkea-FODMAP. Laktoositon maito on parempi vaihtoehto."
   },
   {
     "canonical": "laktoositon maito",
@@ -77,7 +85,8 @@
       "laktoosivapaa maito",
       "lactose-free milk"
     ],
-    "level": "low"
+    "level": "low",
+    "description": "Laktoositon maito ei sisällä FODMAPeja ja on hyvä valinta herkkävatsaisille."
   },
   {
     "canonical": "peruna",
@@ -85,7 +94,8 @@
       "peruna",
       "potato"
     ],
-    "level": "low"
+    "level": "low",
+    "description": "Peruna on hyvin siedetty vähä-FODMAP-juures ja sopii moniin ruokiin."
   },
   {
     "canonical": "herne",
@@ -95,7 +105,8 @@
       "pea",
       "peas"
     ],
-    "level": "high"
+    "level": "high",
+    "description": "Herneet sisältävät galakto-oligosakkarideja. Pienet määrät kypsennettynä voivat sopia joillekin."
   },
   {
     "canonical": "parsakaali",
@@ -104,6 +115,86 @@
       "broccoli",
       "brokkoli"
     ],
-    "level": "medium"
+    "level": "medium",
+    "description": "Parsakaalin varsi sisältää enemmän fruktaaneja kuin nuput. Pienet määrät nuppuja ovat usein siedettyjä."
+  },
+  {
+    "canonical": "tomaatti",
+    "aliases": [
+      "tomaatti",
+      "tomato"
+    ],
+    "level": "low",
+    "description": "Tomaatti on vähä-FODMAP eikä yleensä aiheuta oireita."
+  },
+  {
+    "canonical": "leipä",
+    "aliases": [
+      "leipä",
+      "leipa",
+      "bread"
+    ],
+    "level": "medium",
+    "description": "Vehnäleipä sisältää fruktaaneja. Hapanjuurileipä tai gluteeniton vaihtoehto voi olla sopiva."
+  },
+  {
+    "canonical": "kaura",
+    "aliases": [
+      "kaura",
+      "oat",
+      "oats"
+    ],
+    "level": "low",
+    "description": "Kaura on hyvin siedetty vilja vähä-FODMAP-annoksina. Vältä lisättyä hunajaa tai kuivattuja hedelmiä."
+  },
+  {
+    "canonical": "riisi",
+    "aliases": [
+      "riisi",
+      "rice"
+    ],
+    "level": "low",
+    "description": "Riisi ei sisällä FODMAP-hiilihydraatteja ja on yksi turvallisimmista hiilihydraatin lähteistä."
+  },
+  {
+    "canonical": "kananmuna",
+    "aliases": [
+      "kananmuna",
+      "muna",
+      "egg"
+    ],
+    "level": "low",
+    "description": "Kananmuna ei sisällä FODMAPeja ja on hyvä proteiininlähde."
+  },
+  {
+    "canonical": "kana",
+    "aliases": [
+      "kana",
+      "broileri",
+      "chicken"
+    ],
+    "level": "low",
+    "description": "Kana on vähä-FODMAP, kun sitä ei ole valmistettu marinadissa tai valkosipulilla."
+  },
+  {
+    "canonical": "jogurtti",
+    "aliases": [
+      "jugurtti",
+      "jogurtti",
+      "yogurtti",
+      "jogurt",
+      "yogurt"
+    ],
+    "level": "high",
+    "description": "Tavallinen jogurtti sisältää laktoosia. Valitse laktoositon jogurtti tai kreikkalainen tyyppi."
+  },
+  {
+    "canonical": "juusto",
+    "aliases": [
+      "juusto",
+      "cheese"
+    ],
+    "level": "medium",
+    "description": "Kovat juustot (esim. cheddar) sisältävät vähän laktoosia. Pehmeät juustot voivat olla korkea-FODMAP."
   }
 ]
