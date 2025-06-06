@@ -93,6 +93,51 @@ button:hover {
   font-weight: 500;
 }
 
+/* Tekstisivun sisältölaatikko */
+.content {
+  background: #ffffff;
+  padding: 2em;
+  max-width: 800px;
+  margin: 2em auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* Otsikot sisältösivuilla */
+.content h1, .content h2 {
+  color: #2d5934;
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 1.4rem;
+}
+
+/* Listat */
+.content ul {
+  padding-left: 1.5em;
+}
+
+.content li {
+  margin-bottom: 0.5em;
+}
+
+/* Linkit sisältösivuilla */
+.content a {
+  color: #4a9c4a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+
 .nav a:hover {
   text-decoration: underline;
 }
