@@ -27,6 +27,17 @@
       background-color: #eaf5ea;
       font-weight: bold;
       cursor: pointer;
+      user-select: none;
+    }
+
+    .fodmap-table th.sort-asc::after {
+      content: " ▲";
+      font-size: 0.8em;
+    }
+
+    .fodmap-table th.sort-desc::after {
+      content: " ▼";
+      font-size: 0.8em;
     }
 
     .fodmap-table tr:not(:last-child) {
@@ -76,11 +87,16 @@
 
   <script>
     let sortDirection = [true, true];
+    let lastSorted = null;
 
     function sortTable(columnIndex) {
       const table = document.getElementById("foodTable");
       const tbody = table.querySelector("tbody");
       const rows = Array.from(tbody.querySelectorAll("tr"));
+      const headers = table.querySelectorAll("th");
+
+      // Remove previous arrows
+      headers.forEach(th => th.classList.remove("sort-asc", "sort-desc"));
 
       rows.sort((a, b) => {
         let aText = a.children[columnIndex].textContent.trim().toLowerCase();
@@ -99,6 +115,13 @@
       });
 
       rows.forEach(row => tbody.appendChild(row));
+      
+      // Add arrow class
+      headers[columnIndex].classList.add(
+        sortDirection[columnIndex] ? "sort-desc" : "sort-asc"
+      );
+
+      // Flip direction
       sortDirection[columnIndex] = !sortDirection[columnIndex];
     }
   </script>
