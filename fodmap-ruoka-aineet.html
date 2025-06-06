@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FODMAP-ruoka-aineet | FodMapp</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .fodmap-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2em auto;
+      max-width: 700px;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .fodmap-table th,
+    .fodmap-table td {
+      padding: 1em;
+      text-align: left;
+    }
+
+    .fodmap-table th {
+      background-color: #eaf5ea;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .fodmap-table tr:not(:last-child) {
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
 </head>
 <body>
   <nav class="nav">
@@ -13,45 +41,66 @@
     <a href="fodmap-ruoka-aineet.html">Ruoka-aineet</a>
   </nav>
 
-  <main class="main">
-    <div class="content">
-      <h1>FODMAP-ruoka-aineet</h1>
-      <p>
-        Alla on esimerkkejä tavallisista suomalaisista ruoka-aineista ja niiden FODMAP-luokituksesta. 
-        Luokitukset perustuvat yleisimmin hyväksyttyihin tutkimuksiin ja käytäntöihin.
-      </p>
+  <main class="content">
+    <h1>FODMAP-ruoka-aineet</h1>
+    <p>Alla on esimerkkejä tavallisista suomalaisista ruoka-aineista ja niiden FODMAP-luokituksesta.
+    Luokitukset perustuvat yleisimmin hyväksyttyihin tutkimuksiin ja käytäntöihin.</p>
 
-      <div class="table-wrapper">
-        <table class="fodmap-table">
-          <thead>
-            <tr>
-              <th>Ruoka-aine</th>
-              <th>FODMAP-taso</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Avokado</td><td class="high">Korkea</td></tr>
-            <tr><td>Porkkana</td><td class="low">Matala</td></tr>
-            <tr><td>Omena</td><td class="high">Korkea</td></tr>
-            <tr><td>Banaani (kypsä)</td><td class="medium">Keskitaso</td></tr>
-            <tr><td>Banaani (raaka)</td><td class="low">Matala</td></tr>
-            <tr><td>Maito</td><td class="high">Korkea</td></tr>
-            <tr><td>Laktoositon maito</td><td class="low">Matala</td></tr>
-            <tr><td>Vehnäleipä</td><td class="high">Korkea</td></tr>
-            <tr><td>Peruna</td><td class="low">Matala</td></tr>
-            <tr><td>Herneet</td><td class="medium">Keskitaso</td></tr>
-          </tbody>
-        </table>
-      </div>
+    <table class="fodmap-table" id="foodTable">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Ruoka-aine</th>
+          <th onclick="sortTable(1)">FODMAP-taso</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Avokado</td><td class="high">Korkea</td></tr>
+        <tr><td>Porkkana</td><td class="low">Matala</td></tr>
+        <tr><td>Omena</td><td class="high">Korkea</td></tr>
+        <tr><td>Banaani (kypsä)</td><td class="medium">Keskitaso</td></tr>
+        <tr><td>Banaani (raaka)</td><td class="low">Matala</td></tr>
+        <tr><td>Maito</td><td class="high">Korkea</td></tr>
+        <tr><td>Laktoositon maito</td><td class="low">Matala</td></tr>
+        <tr><td>Vehnäleipä</td><td class="high">Korkea</td></tr>
+        <tr><td>Peruna</td><td class="low">Matala</td></tr>
+        <tr><td>Herneet</td><td class="medium">Keskitaso</td></tr>
+      </tbody>
+    </table>
 
-      <p style="margin-top: 2em;">
-        Lisää ruoka-aineita löydät käyttämällä <a href="index.html">FodMapp-laskuria</a>.
-      </p>
-    </div>
+    <p>Lisää ruoka-aineita löydät käyttämällä <a href="index.html">FodMapp-laskuria</a>.</p>
   </main>
 
   <footer class="footer">
     <p>Created by <a href="https://yrttitohtori.fi" target="_blank" rel="noopener noreferrer">Yrttitohtori</a></p>
   </footer>
+
+  <script>
+    let sortDirection = [true, true];
+
+    function sortTable(columnIndex) {
+      const table = document.getElementById("foodTable");
+      const tbody = table.querySelector("tbody");
+      const rows = Array.from(tbody.querySelectorAll("tr"));
+
+      rows.sort((a, b) => {
+        let aText = a.children[columnIndex].textContent.trim().toLowerCase();
+        let bText = b.children[columnIndex].textContent.trim().toLowerCase();
+
+        if (columnIndex === 1) {
+          const order = { "korkea": 3, "keskitaso": 2, "matala": 1 };
+          return sortDirection[1]
+            ? order[bText] - order[aText]
+            : order[aText] - order[bText];
+        }
+
+        return sortDirection[columnIndex]
+          ? aText.localeCompare(bText)
+          : bText.localeCompare(aText);
+      });
+
+      rows.forEach(row => tbody.appendChild(row));
+      sortDirection[columnIndex] = !sortDirection[columnIndex];
+    }
+  </script>
 </body>
 </html>
