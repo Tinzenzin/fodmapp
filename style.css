@@ -142,3 +142,49 @@ button:hover {
   text-decoration: underline;
 }
 
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 2em;
+}
+
+.fodmap-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.fodmap-table th,
+.fodmap-table td {
+  padding: 0.8em 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.fodmap-table th {
+  background-color: #f0f8f0;
+  font-weight: bold;
+}
+
+.fodmap-table td.low {
+  color: green;
+  font-weight: 500;
+}
+
+.fodmap-table td.medium {
+  color: orange;
+  font-weight: 500;
+}
+
+.fodmap-table td.high {
+  color: red;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .fodmap-table td,
+  .fodmap-table th {
+    padding: 0.6em;
+  }
+}
+
